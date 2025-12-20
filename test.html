@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="send()">Test Prediction</button>
+
+  <script>
+    function send() {
+      fetch("http://127.0.0.1:5000/predict", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          transaction_amount: 9000,
+          transaction_hour: 2,
+          transaction_count: 10,
+          location_distance: 30
+        })
+      })
+      .then(res => res.json())
+      .then(data => alert(JSON.stringify(data)));
+    }
+  </script>
+</body>
+</html>

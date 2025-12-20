@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction Anomaly Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Transaction Anomaly Detection</h1>
+
+    <input type="number" id="amount" placeholder="Transaction Amount">
+    <input type="number" id="hour" placeholder="Transaction Hour (0-23)">
+    <input type="number" id="count" placeholder="Transaction Count">
+    <input type="number" id="distance" placeholder="Location Distance (km)">
+
+    <button onclick="checkTransaction()">Check Transaction</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
