@@ -10,41 +10,62 @@ body {
 
 .container {
     background: #1f2a40;
-    padding: 25px;
-    border-radius: 10px;
-    width: 350px;
-    text-align: center;
+    padding: 28px;
+    border-radius: 12px;
+    width: 380px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #cfd8dc;
 }
 
 input {
     width: 100%;
     padding: 10px;
-    margin: 8px 0;
-    border-radius: 5px;
+    border-radius: 6px;
     border: none;
+    font-size: 14px;
 }
 
 button {
     width: 100%;
-    padding: 10px;
-    margin-top: 10px;
+    margin-top: 18px;
+    padding: 12px;
     background: #00c6ff;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 6px;
     font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
     background: #0072ff;
 }
 
+/* Result Section */
+#result-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
 #result {
-    margin-top: 15px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+}
+
+#description {
+    font-size: 14px;
+    margin-top: 6px;
+    color: #b0bec5;
 }

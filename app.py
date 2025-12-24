@@ -6,6 +6,7 @@ import numpy as np
 app = Flask(__name__)
 CORS(app)
 
+# Load trained model and scaler
 model = joblib.load("isolation_forest.pkl")
 scaler = joblib.load("scaler.pkl")
 
